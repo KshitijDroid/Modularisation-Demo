@@ -8,3 +8,9 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Modularisation Demo"
 include ':app'
+include ':featureA'
+include ':featureA-api'
+include ':featureB'
+include ':featureB-api'
+include ':featureC'
+include ':featureC-api'
