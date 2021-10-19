@@ -35,7 +35,7 @@ dependencies {
 
     implementation project(":featureA-api")
     implementation project(":featureB-api")
-    implementation project(":featureC-api")
+    implementation project(':utilities-api')
 
     implementation 'androidx.core:core-ktx:1.6.0'
     implementation 'androidx.appcompat:appcompat:1.3.1'
