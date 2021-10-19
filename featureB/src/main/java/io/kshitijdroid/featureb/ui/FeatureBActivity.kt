@@ -3,15 +3,22 @@ package io.kshitijdroid.featureb.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import io.kshitijdroid.featureb.FeatureBDependencies
 import io.kshitijdroid.featureb.R
+import javax.inject.Inject
 
 class FeatureBActivity : AppCompatActivity() {
 
-    private lateinit var viewModel: FeatureBViewModel
+    @Inject
+    lateinit var viewModel: FeatureBViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_feature_bactivity)
+
+        DaggerFeatureBComponent.factory()
+            .create(applicationContext as FeatureBDependencies)
+            .inject(this)
     }
 
     fun navigateToFeatureA(view: View) {

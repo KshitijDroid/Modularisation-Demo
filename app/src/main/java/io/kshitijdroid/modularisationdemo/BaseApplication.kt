@@ -2,7 +2,9 @@ package io.kshitijdroid.modularisationdemo
 
 import android.app.Application
 import io.kshitijdroid.featurea.FeatureADependencies
+import io.kshitijdroid.featurea.api.FeatureANavigationProvider
 import io.kshitijdroid.featureb.FeatureBDependencies
+import io.kshitijdroid.featureb.api.FeatureBNavigationProvider
 
 class BaseApplication : Application(), DependenciesProvider {
 
@@ -13,12 +15,12 @@ class BaseApplication : Application(), DependenciesProvider {
         applicationComponent = DaggerApplicationComponent.create()
     }
 
-    override fun featureADependencies(): FeatureADependencies {
-        return applicationComponent
+    override fun featureBNavigationProvider(): FeatureBNavigationProvider {
+        return applicationComponent.featureBNavigationProvider()
     }
 
-    override fun featureBDependencies(): FeatureBDependencies {
-        return applicationComponent
+    override fun featureANavigationProvider(): FeatureANavigationProvider {
+        return applicationComponent.featureANavigationProvider()
     }
 
 }

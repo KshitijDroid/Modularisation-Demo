@@ -4,8 +4,9 @@ import android.content.Context
 import io.kshitijdroid.featurea.api.FeatureANavigationProvider
 import io.kshitijdroid.featureb.api.FeatureBNavigationProvider
 import io.kshitijdroid.featureb.api.models.RandomData
+import javax.inject.Inject
 
-class FeatureBViewModel(
+class FeatureBViewModel @Inject constructor(
     private val featureANavigationProvider: FeatureANavigationProvider,
     private val featureBNavigationProvider: FeatureBNavigationProvider
 ) {
