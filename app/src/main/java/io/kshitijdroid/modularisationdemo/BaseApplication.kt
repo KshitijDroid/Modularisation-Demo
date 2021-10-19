@@ -1,9 +1,7 @@
 package io.kshitijdroid.modularisationdemo
 
 import android.app.Application
-import io.kshitijdroid.featurea.FeatureADependencies
 import io.kshitijdroid.featurea.api.FeatureANavigationProvider
-import io.kshitijdroid.featureb.FeatureBDependencies
 import io.kshitijdroid.featureb.api.FeatureBNavigationProvider
 
 class BaseApplication : Application(), DependenciesProvider {

@@ -18,24 +18,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/button_feature_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="200dp"
-        android:text="Feature A"
         android:onClick="navigateToFeatureA"
-        android:id="@+id/button_feature_a"
+        android:text="Feature A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/button_feature_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="128dp"
-        android:text="Feature B (Open again)"
         android:onClick="navigateToFeatureB"
-        android:id="@+id/button_feature_b"
+        android:text="Feature B (Open again)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

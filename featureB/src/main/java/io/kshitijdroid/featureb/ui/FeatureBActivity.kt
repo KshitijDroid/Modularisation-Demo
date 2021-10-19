@@ -1,8 +1,8 @@
 package io.kshitijdroid.featureb.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import io.kshitijdroid.featureb.FeatureBDependencies
 import io.kshitijdroid.featureb.R
 import javax.inject.Inject
