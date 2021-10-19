@@ -1,7 +1,7 @@
 package io.kshitijdroid.featurea
 
-import io.kshitijdroid.featurea.api.FeatureANavigationProvider
+import io.kshitijdroid.featureb.api.FeatureBNavigationProvider
 
 interface FeatureADependencies {
-    fun featureBNavigationProvider(): FeatureANavigationProvider
+    fun featureBNavigationProvider(): FeatureBNavigationProvider
 }
